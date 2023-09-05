@@ -1,0 +1,45 @@
+import tpDonPonciano.*
+
+
+
+test "Don Ponciano siembra trigo en 10 de las 15 hectareas " {
+
+		donPonciano.sembrar(trigo,10)
+		assert.equals(10,donPonciano.hectareasAsembrarS())
+
+}
+
+
+test "Don Ponciano siembra trigo en 10 de las 15 hectareas y fumiga su campo " {
+	
+		donPonciano.sembrar(trigo,10)
+		donPonciano.fumigaSuCampo()
+		assert.equals(-300,donPonciano.fumigaSuCampo())
+
+}
+
+
+
+test "Don Ponciano fertiliza su campo" {
+	
+		donPonciano.sembrar(trigo,10)
+		donPonciano.fumigaSuCampo()
+		donPonciano.mejorRendimiento(20)
+		assert.equals(-550,donPonciano.mejorRendimiento(20))
+
+}
+
+
+
+
+
+test "Don Ponciano cosecha lo campo" {
+	
+		donPonciano.sembrar(trigo,10)
+		donPonciano.fumigaSuCampo()
+		donPonciano.mejorRendimiento(20)
+		donPonciano.cosecha(trigo)
+		assert.equals(199650,donPonciano.cosecha(trigo))
+
+}
+
