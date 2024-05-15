@@ -1,4 +1,4 @@
-# PDP
-PF
+# PdeP
 
-Este es un repositorio para trabajar con el paradigma funcional , con el lenguaje de haskell
+## Repositorio de la materia Paradigmas de Programacion
+### Paradigma Funcional , Paradigma Logico , Paradiga Orientado a Objetos
